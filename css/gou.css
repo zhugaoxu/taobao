@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.g{
+	height: 800px;
+	width: 1600px;
+	/*background: red;*/
+}
+.g1{
+	height: 40px;
+	width: 1600px;
+	background:lightgray;
+	line-height: 40px;
+}
+.g1>div:first-child{
+	margin-left:200px;
+	width:120px;
+	/*border: 1px solid white;*/
+}
+.g1>div{
+	height: 40px;
+	float:left;
+	margin-left:10px;
+}
+.g2:hover{
+	color:red;
+}
+.za{
+	display: block;
+	margin-top: 10px;
+	width: 10px;
+	height: 10px;
+	margin-top: -22px;
+	margin-left: 100px;
+	
+}
+.po{
+	position: absolute;
+	border: 1px solid blue;
+	background: white;
+	width: 260px;
+	height: 150px;
+	top: 40px;
+	display: none;
+}
+.po3{
+	position: absolute;
+	border: 1px solid blue;
+	width: 260px;
+	height: 250px;
+	top: 40px;
+	display: none;
+}
+.po31{
+	height: 40px;
+	width: 260px;
+	background: greenyellow;
+	text-align: center;
+	line-height: 40px;
+}
+.po32{
+	width: 260px;
+	height: 180px;
+}
+.po33{
+	height: 30px;
+	width: 260px;
+	background: blue;
+	text-align: center;
+	line-height: 30px;
+}
+.po32>img{
+	width: 260px;
+	height: 180px;
+}
+.po1{
+	line-height: 20px;
+	height: 20px;
+	width: 260px;
+	/*border:1px solid white;*/
+	margin-top:10px;
+	
+	
+}
+.po11>li{
+	list-style: none;
+	float: right;
+	padding-left:5px;
+	padding-right: 5px;
+}
+.po11>li:last-child{
+	border-right: 1px solid gray;
+}
+.za1{
+	display: block;
+	height: 70px;
+	width: 70px;
+	border-radius: 35px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.po>p{
+	margin-top:-35px;
+	margin-left:130px;
+	line-height: 30px;
+}
+.po2{
+	height: 30px;
+	width: 220px;
+	margin-top:30px;
+	background: lightpink;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 30px;
+	
+}
+.g3{
+	
+	position: absolute;
+	left: 680px;
+	height: 40px;
+	width: 750px;
+	
+	/*background:green;*/
+}
+.g4>li{
+	list-style: none;
+	float: left;
+	/*color: white;*/
+}
+.po4{
+	height: 70px;
+	width: 120px;
+	background: white;
+	position: absolute;
+	top: 40px;
+	line-height: 30px;
+	font-size: 15px;
+    display:none ;
+}
+.h{
+	height: 120px;
+	width: 1600px;
+	background: white;
+}
+.h1{
+	display: block;
+	height: 60px;
+	width: 200px;
+	
+	margin-left: 200px;
+	padding-top: 20px;
+}
+.h2{
+	font-size: 30px;
+	margin-top:-60px ;
+	margin-left: 420px;
+}
+.h3{
+	height: 50px;
+	width: 65px;
+	background: lightgray;
+	line-height: 50px;
+	margin-left:860px ;
+	margin-top: -52px;
+	text-align: center;
+	font-size: 15px;
+}
+.h4{
+	height: 50px;
+	width: 85px;
+	line-height: 50px;
+	background:orangered;
+	margin-left: 1317px;
+	margin-top: -50px;
+	text-align: center;
+	color: white;
+	line-height: 50px;
+	
+	/*font-size: 22px;*/
+}
+.zh{
+	height: 400px;
+	width: 1200px;
+	margin-left: 200px;
+	
+	/*background: greenyellow;*/
+	margin-top: 50px;
+}
+.zh1{
+	height:42px;
+	width: 1200px;
+	background: white;
+	
+}
+.zh2>li{
+	list-style: none;
+	float: left;
+	display: block;
+	height: 26px;
+	width: 120px;
+	border-right:1px solid green;
+	margin-top: 8px;
+	font-size: 20px;
+	text-align: center;
+}
+.zh2>li:last-child{
+	border-right: none;
+}
+.zh3,.zh4,.zh5{
+	float: left;
+	margin-top: 11px;
+}
+.zh3{
+	margin-left: 555px;
+}
+.zh5{
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	line-height: 20px;
+	background: darkgray;
+	margin-left: 8px;
+}
+.zh6{
+	width: 1200px;
+	height: 50px;
+	/*border: 1px solid red;*/
+	line-height:50px;
+	background: white;
+}
+.zh7{
+	float: left;
+}
+.zh8{
+	height: 150px;
+	width: 1200px;
+	margin-top: 15px;
+	/*border: 1px solid red;*/
+}
+.zh81{
+	height: 30px;
+	width: 1200px;
+	background: white;
+	line-height: 30px;
+}
+#za{
+	margin-left:15px;
+}
+.zh82{
+	height: 120px;
+	width: 1200px;
+	border:1px solid red;
+}
+.za3{
+	margin-left: 25px;
+	margin-top:18px;
+}
+.zh83{
+	height: 80px;
+	width: 80px;
+	border: 1px solid black;
+	margin-top: -15px;
+	margin-left: 48px;
+}
+.zh84{
+	height: 80px;
+	width: 220px;
+	margin-left:136px;
+	/*border:1px solid red;*/
+	margin-top: -80px;
+}
+.zh85{
+	width: 200px;
+	height: 110px;
+	/*border:1px dotted red;*/
+	margin-top: -98px;
+	margin-left: 400px;
+}
+.zh86{
+	width: 80px;
+	height: 63px;
+	/*border: 1px solid red;*/
+	background: lightgray;
+	margin-top: -108px;
+	margin-left: 700px;
+}
+.zh89{
+	width: 100px;
+	height: 60px;
+	/*border: 1px solid red;*/
+	margin-top: -58px;
+	margin-left: 1000px;
+}

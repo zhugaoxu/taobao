@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/deng.css"/>
+	</head>
+	<body>
+		<div class="z">
+			<img src="img/5afd6b861dd24.jpg">
+			<div class="z1">
+				
+			</div>
+			<div class="z2">
+				<img src="img/登录.png" style="margin-top: 40px;margin-left:52px"><input type="text" value="Username" id="z">
+				<img src="img/信件.png" style="margin-top: 110px;margin-left:52px"><input type="text" value="Email" id="zz">
+				<img src="img/电话.png" style="margin-top: 180px;margin-left:52px"><input type="text" value="Telephong" id="zzz">
+				<img src="img/密码锁.png" style="margin-top: 250px;margin-left:52px"><input type="password"  id="zzzz">
+			    <input type="submit" value="REGISTER" class="zz" style="padding-left: 0;">
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		var z1=document.getElementById('z');
+		var z2=document.getElementById('zz');
+		var z3=document.getElementById('zzz');
+		var z4=document.getElementById('zzzz');
+		z1.onfocus=function(){
+			z1.value='';
+		}
+		z1.onblur=function(){
+			if(z1.value==''){
+				z1.value='Username';
+			}
+		}
+		z2.onfocus=function(){
+			z2.value='';
+		}
+		z2.onblur=function(){
+			if(z2.value==''){
+				z2.value='Email';
+			}
+		}
+		z3.onfocus=function(){
+			z3.value='';
+		}
+		z3.onblur=function(){
+			if(z3.value==''){
+				z3.value='Telephone';
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		   *{
+		   	padding: 0;
+		   	margin: 0;
+		   	box-sizing: border-box;
+		   }	
+		   .z{
+		   	height: 300px;
+		   	width: 600px;
+		   	border: 1px solid red;
+		   	margin: 50px auto;
+		   	overflow: hidden;
+		   	position: relative;
+		   }
+		   .zz{
+		   	height: 300px;
+		   	width: 600px;
+		   	border: 1px solid blue;
+		   	margin: 100px auto;
+		   	overflow: hidden;
+		   	position:relative;
+		   }
+		   .imgbox{
+		   	position: absolute;
+		   	left: 0;
+		   	top: 0;
+		   	height: 300px;
+		   	width: 15000px;
+		   	/*border: 1px solid red;*/
+		   	overflow: hidden;
+		   }
+		   .imgbox>li{
+		   	width: 600px;
+		   	height: 300px;
+		   	float: left;
+		   }
+		   .imgbox>li img{
+		   	width: 600px;
+		   	height:300px ;
+		   }
+		   .za{
+		   	position: absolute;
+		   	height: 50px;
+		   	width: 230px;
+		   	margin-left: 200px;
+		   	margin-top: 230px;
+		   	/*background: blue;*/
+		   	z-index: 10;
+		   	list-style: none;
+		   }
+		   .za>li{
+		   	height: 20px;
+		   	width: 20px;	
+		   	border-radius: 10px;
+		   	background: white;
+		   	float: left;
+		   	margin-left:15px;
+		   	margin-top: 5px;
+		   	cursor: pointer;
+		   }
+		   span.prev,span.next{
+		   	position: absolute;
+		   	height: 50px;
+		   	width: 50px;
+		   	border-radius: 25px;
+		   	background: darkgray;
+		   	text-align: center;
+		   	line-height: 50px;
+		   	z-index: 25;
+		   	opacity: 0.6;
+		   	display: inline-block;
+		   	margin-top: 125px;
+		   	font-size: 30px;
+		   	cursor: pointer;
+		   	opacity: 0;
+		   	transition: all 1s;
+		   }
+		   .zz:hover span{
+		   	 opacity: 0.6;
+		   }
+		   .z:hover span{
+		   	opacity: 0.6;
+		   }
+		   span.next{
+		   	margin-left: 550px;
+		   }
+		</style>
+	</head>
+	<body>
+		<div class="z">
+			
+			<ul class="imgbox">
+				<li>
+					<a href="#">
+						<img src="image/t010cf7fef90373fc5a.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t0124abffdbb2bd6b6d.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t0132820c9e2b2aa31a.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t01377ff417f49712fb.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t01923d1816b205f6b0.jpg">
+					</a>
+				</li>
+			</ul>
+			<ul class="za">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span class="prev"><</span>
+			<span class="next">></span>
+		</div>
+		<div class="zz">
+			<ul class="imgbox">
+				<li>
+					<a href="#">
+						<img src="image/t010cf7fef90373fc5a.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t0124abffdbb2bd6b6d.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t0132820c9e2b2aa31a.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t01377ff417f49712fb.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t01923d1816b205f6b0.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="image/t01f7ff3287ec2e2516.jpg">
+					</a>
+				</li>
+			</ul>
+			<ul class="za">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span class="prev"><</span>
+			<span class="next">></span>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+	<script type="text/javascript" src="js/dd.js" ></script>
+	<script>
+		$('.z').lun();
+		$('.zz').lun();
+	</script>
+	
+</html>

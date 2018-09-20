@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.h {
+				height: 300px;
+				width: 300px;
+				border: 1px solid red;
+				margin: 100px auto;
+				position: relative;
+			}
+			
+			.h>img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transition:  0.5s;
+			}
+			
+			ul {
+				list-style: none;
+				overflow: hidden;
+				position: absolute;
+				height: 30px;
+				width: 150px;
+				left: 75px;
+				/*border: 1px solid red;*/
+				margin-top: 90%;
+			}
+			
+			ul>li {
+				list-style: none;
+				height: 16px;
+				width: 16px;
+				background: white;
+				float: left;
+				border-radius: 8px;
+				margin-left: 17px;
+			}
+			.xu{
+				position: absolute;
+				height: 30px;
+				width:100%;
+				/*background: greenyellow;*/
+				margin-top: 120px;
+				
+			}
+			.xu>span:first-child{
+				float: right;
+				font-size: 30px;
+				line-height: 30px;
+				background: darkgray;
+				cursor: pointer;
+				
+			}
+			.xu>span:last-child{
+				float: left;
+				font-size: 30px;
+				line-height: 30px;
+				background: darkgray;
+				cursor: pointer;
+			}
+			#xia,#shang{
+				opacity: 0.4;
+			}
+			#xia:hover{
+				opacity: 0.7;
+			}
+			#shang:hover{
+				opacity: 0.7;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="h">
+			<img src="image/t010cf7fef90373fc5a.jpg" />
+			<img src="image/t0124abffdbb2bd6b6d.jpg" />
+			<img src="image/t0132820c9e2b2aa31a.jpg" />
+			<img src="image/t016240bdfe6bd5c931.jpg">
+			<ul class="z">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="xu">
+				<span id="xia">>></span>
+				<span id="shang"><<</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script>
+		
+		
+		var c = document.querySelectorAll('.z li');
+		var img = document.querySelectorAll('img');
+		var h=document.querySelector('.h');
+		var timer=setInterval(zhu,2000);
+		var num = 0; 
+		var xia=document.getElementById('xia');
+		var shang=document.getElementById('shang');
+
+		function zhu() {
+			num++;
+			if(num == 4) {
+				num = 0
+			}
+
+			for(var j = 0; j < c.length; j++) {
+				c[j].style.backgroundColor = 'white';
+				img[j].style.opacity = '0';
+			}
+			c[num].style.backgroundColor = 'red';
+			img[num].style.opacity = '1';
+		}
+		h.onmouseenter=function(){
+			clearInterval(timer);
+			for(var i=0;i<c.length;i++){
+					c[i].index=i;
+					c[i].onclick=function(){
+						 
+						
+						 for(var j=0;j<c.length;j++){
+						 	c[j].style.backgroundColor='white';
+						 	img[j].style.opacity='0';
+						 }
+						 this.style.backgroundColor='red';
+						 img[this.index].style.opacity='1';
+						 num=this.index;
+						 
+					}
+					var cc=c[i].index;
+					
+					alert(cc);
+					
+					shang.onclick=function(){
+						cc--;
+						if(cc==-1){
+							cc=3;
+						}
+						for(var k=0;k<c.length;k++){
+						 	c[k].style.backgroundColor='white';
+						 	img[k].style.opacity='0';
+						 }
+						 c[cc].style.backgroundColor='red';
+						 img[cc].style.opacity='1';
+						 num=cc;
+					}
+					xia.onclick=function(){
+						cc++;
+						if(cc==4){
+							cc=0;
+						}
+						for(var kk=0;kk<c.length;kk++){
+						 	c[kk].style.backgroundColor='white';
+						 	img[kk].style.opacity='0';
+						 }
+						 c[cc].style.backgroundColor='red';
+						 img[cc].style.opacity='1';
+						 num=cc;
+					}
+				}
+		}
+		h.onmouseleave=function(){
+			timer=setInterval(zhu,2000);
+			
+		}
+	</script>
+
+</html>
